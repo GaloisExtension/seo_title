@@ -65,7 +65,7 @@ def login_screen() -> bool:
         return True
 
     st.title("🔐 ログイン")
-    st.write("ユーザー名とパスワードを入力してください。デモ用のパスワードは任意です。")
+    st.write("ユーザー名とパスワードを入力してください。")
 
     user = st.text_input("Username")
     pw = st.text_input("Password", type="password")
