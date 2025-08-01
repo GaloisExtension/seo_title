@@ -289,10 +289,10 @@ def qiita_search_count(query: str) -> Tuple[int, List[Dict[str, Any]]]:
 
 def sidebar_inputs() -> Dict[str, Any]:
     st.sidebar.header("基本設定")
-    theme = st.sidebar.text_input("主題", value="時系列分析")
-    inds = st.sidebar.text_input("対象業界(カンマ区切り)", value="製造業,小売業").split(",")
+    theme = st.sidebar.text_input("主題", value="発注自動化")
+    inds = st.sidebar.text_input("対象業界(カンマ区切り)", value="医療,介護,福祉").split(",")
     inds = [x.strip() for x in inds if x.strip()]
-    tech = st.sidebar.text_input("技術キーワード(カンマ区切り)", value="在庫最適化,発注自動化").split(",")
+    tech = st.sidebar.text_input("技術キーワード(カンマ区切り)", value="LLM,AI,機械学習").split(",")
     tech = [x.strip() for x in tech if x.strip()]
 
     st.sidebar.header("APIキー設定")
